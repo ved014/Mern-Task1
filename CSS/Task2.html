@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 150px;
+            background-color: #add9e6;
+            
+        }
+        #unique {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            width: 360px;
+            background-color: #add9e6;
+            display: inline-flex; 
+        }
+
+        li a {
+            display: block;
+            color: blue;
+            padding: 8px 16px;
+            text-decoration: none;
+        }
+
+        li a.active {
+            background-color: #ffa501;
+            color: white;
+        }
+
+        li a:hover:not(.active) {
+            background-color: grey;
+        }
+        nav{
+            width: 150px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+        #unnav {
+            width: 360px;
+            padding: 10px;
+            border: 1px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <h2>Vertical Navigation Bar</h2>
+<nav>
+    <ul>
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#Java">Java</a></li>
+        <li><a href="#CSS">CSS</a></li>
+        <li><a href="#HTML">HTML</a></li>
+        <li><a href="#Bootstrap">Bootstrap</a></li>
+    </ul>
+</nav>
+<h2>Horizontal  Navigation Bar</h2>
+<nav id="unnav">
+    <ul id="unique">
+        <li><a class="active" href="#home">Home</a></li>
+        <li><a href="#Java">Java</a></li>
+        <li><a href="#CSS">CSS</a></li>
+        <li><a href="#HTML">HTML</a></li>
+        <li><a href="#Bootstrap">Bootstrap</a></li>
+    </ul>
+</nav>
+
+</body>
+
+</html>

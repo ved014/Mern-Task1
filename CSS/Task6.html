@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>task 6</title>
+</head>
+<style>
+    .centre{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: auto;
+        
+    }
+    .container{
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        margin-top: 50px;
+        width: 40%;
+    }
+    label{
+        font-size: medium;
+        font-weight: bolder;
+    }
+    .Password ,.Login,.check{
+        margin-top: 15px;
+    }
+    .Login input{
+        width: 100%;
+        height: 35px;
+        background-color: #4db051;
+        border: none;
+        color: black;
+    }
+    .username input , .Password input{
+        width: 98%;
+        height: 30px;
+        color: black;
+    }
+    .footer{
+        display:inline-flex;
+        width: 100%;
+    }
+    .text {
+         /* Allow it to expand and take up available space */
+        margin-left: auto;
+    }
+    .btn {
+        flex-grow: 1; /* Push the button to the right */
+    }
+    .btn button{
+        height:30px;
+        width: 70px;
+        background-color: #f04335;
+        border-radius: 5px;
+        border: none;
+        color: white;
+    }
+</style>
+<body>
+    <div class="container">
+        <div class="image">
+            <img src="https://cdn-icons-png.flaticon.com/512/4128/4128253.png" class="centre" alt="profilePicture" width="200px" height="200px">
+        </div>
+        <br><br>
+        <div class="username">
+            <label for="username">Username</label><br>
+            <input type="text" name="username" placeholder="Enter Username">
+        </div>
+        
+        <div class="Password">
+            <label for="Password">Password</label><br>
+            <input type="text" name="Password" placeholder="Enter Password">
+        </div>
+
+        
+        <div class="Login ">
+            <input type="button" value="Login" >
+        </div>
+        <div class="check">
+            <input type="checkbox" name="" id=""> Remember me
+        </div>
+        <hr>
+        <div class="footer">
+            
+            <div class="btn">
+                <button type="reset">Cancel</button>
+            </div>
+            <div class="text">
+                <p>Forgot <a href="">Password?</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
